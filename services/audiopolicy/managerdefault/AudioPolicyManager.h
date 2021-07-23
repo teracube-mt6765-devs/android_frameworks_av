@@ -786,6 +786,8 @@ protected:
         bool mFMDirectAudioPatchEnable;
         bool mSkipFMVolControl;
 
+        virtual status_t setPolicyManagerParameters(int key, int value);
+
 protected:
         void onNewAudioModulesAvailableInt(DeviceVector *newDevices);
 
